@@ -2,9 +2,11 @@
 
 <%= link_to('New Picture', new_picture_path) %>
 
-<% @pictures.each do |pic| %>
-  <%= render 'single_picture', picture: pic %>
-<% end %>
+<div class="container">
+  <% @pictures.each do |pic| %>
+    <%= render 'single_picture', picture: pic %>
+  <% end %>
+</div>
 
 <!-- <% @most_recent_pictures.each do |pic| %>
   <p><%= pic.title %>, <%= pic.artist %></p>
