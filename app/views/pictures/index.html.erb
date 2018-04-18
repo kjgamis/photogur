@@ -1,14 +1,22 @@
-<h1>Pictures</h1>
-
-<%= link_to('New Picture', new_picture_path) %>
-
 <div class="container">
-  <% @pictures.each do |pic| %>
-    <%= render 'single_picture', picture: pic %>
-  <% end %>
-</div>
 
-<!-- <% @most_recent_pictures.each do |pic| %>
-  <p><%= pic.title %>, <%= pic.artist %></p>
-  <%= link_to(image_tag(pic.url), "/pictures/#{pic.id}") %>
-<% end %> -->
+  <header class="header">
+    <h1>Pictures</h1>
+
+    <%= link_to('New Picture', new_picture_path) %>
+  </header>
+
+  <section class="wrapper">
+    <% @pictures.each do |pic| %>
+      <%= render 'single_picture', picture: pic %>
+    <% end %>
+  </section>
+
+  <!-- <% @most_recent_pictures.each do |pic| %>
+    <p><%= pic.title %>, <%= pic.artist %></p>
+    <%= link_to(image_tag(pic.url), "/pictures/#{pic.id}") %>
+  <% end %> -->
+  <footer>
+    <h5>&copy Karen Gamis</h5>
+  </footer>
+</div>

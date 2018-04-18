@@ -4,3 +4,44 @@
 body {
   font-family: Helvetica, sans-serif;
 }
+
+.header {
+  grid-area: header;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30% 60% 10%;
+  grid-template-areas:
+    "header"
+    "wrapper"
+    "footer"
+}
+
+.wrapper {
+  background: #eee;
+  padding: 1em;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 0.25em;
+  grid-area: wrapper;
+
+}
+
+.wrapper > .single:nth-child(odd) {
+  background: #ccc;
+}
+
+.single {
+  border: solid black .05em;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+}
