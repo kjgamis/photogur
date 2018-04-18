@@ -1,6 +1,6 @@
 <h1>Pictures</h1>
 
-<%= link_to("New Picture", "/pictures/new") %>
+<%= link_to('New Picture', new_picture_path) %>
 
 <% @pictures.each do |pic| %>
   <%= render 'single_picture', picture: pic %>
