@@ -3,8 +3,7 @@
 <%= link_to("New Picture", "/pictures/new") %>
 
 <% @pictures.each do |pic| %>
-  <p><%= pic.title %>, <%= pic.artist %></p>
-  <%= link_to(image_tag(pic.url), "/pictures/#{pic.id}") %>
+  <%= render 'single_picture', picture: pic %>
 <% end %>
 
 <!-- <% @most_recent_pictures.each do |pic| %>
