@@ -1,8 +1,7 @@
 class Picture < ApplicationRecord
 
   validates :artist, presence: true
-  validates :url, presence: true
-  validates_uniqueness_of :url
+  validates :url, uniqueness: true
   validate :minimum_length
   validate :maximum_length
 
