@@ -9,6 +9,7 @@ body {
   font-family: 'Exo', sans-serif;
   font-size: 50px;
 }
+
 .header {
   grid-area: header;
 }
@@ -23,29 +24,32 @@ body {
     "footer"
 }
 
-.wrapper {
-  background: #eee;
-  padding: 1em;
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-gap: 0.25em;
-  grid-area: wrapper;
-
-}
-
-.wrapper > .single:nth-child(odd) {
-  background: #ccc;
-}
-
-.single {
-  border: solid black .05em;
-}
-
 img {
   width: 100%;
 }
 
 footer {
   grid-area: footer;
+}
+
+@media only screen and (min-width: 1024px)  {
+
+  .wrapper {
+    background: #eee;
+    padding: 1em;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 0.25em;
+    grid-area: wrapper;
+
+  }
+
+  .wrapper > .single:nth-child(odd) {
+    background: #ccc;
+  }
+
+  .single {
+    border: solid black .05em;
+  }
 }
