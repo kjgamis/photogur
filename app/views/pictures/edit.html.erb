@@ -1,7 +1,6 @@
 <h1 class="label">Edit Picture</h1>
 
-<p>
-<%= link_to("Back", "/pictures/#{@picture.id}") %>
-</p>
+<span class="link"><%= link_to("Back", "/pictures/#{@picture.id}") %>
+</span>
 
 <%= render 'picture_form', picture: @picture %>
