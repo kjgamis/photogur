@@ -1,5 +1,7 @@
 class Picture < ApplicationRecord
 
+  has_many :comments
+
   validates :artist, presence: true
   validates :url, uniqueness: true
   validate :minimum_length
