@@ -35,6 +35,6 @@ class Picture < ApplicationRecord
 
     return if title == nil
     char_length = title.length
-    errors.add(:title, 'maximum length 20 characters') if char_length > 20
+    errors.add(:title, 'maximum length 20 characters') if char_length > 50
   end
 end
