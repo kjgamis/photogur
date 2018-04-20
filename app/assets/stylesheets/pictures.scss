@@ -14,23 +14,13 @@ img {
   width: 100%;
 }
 
-.navbar {
-  grid-area: navbar;
-  align-self: center;
-  justify-self: end;
-  a {
-    color: #000;
-  }
-  a:hover {
-    color: #ccc;
-    transition: .5s;
-  }
-}
 
 .label {
   font-family: 'Quicksand', sans-serif;
 }
 
+
+// header
 
 .header {
   grid-area: header;
@@ -48,7 +38,25 @@ img {
     grid-area: logo;
   }
   .navbar {
+    font-size: 1.3em;
     margin: 0 1em;
+    grid-area: navbar;
+    align-self: center;
+    justify-self: end;
+    a {
+      border: solid 4px rgba(255, 255, 255, .4);
+      border-radius: 5px;
+      color: #000;
+      padding: 5px;
+    }
+    a:nth-child(1) {
+      border: solid 4px #000;
+      transition: .5s;
+    }
+    a:hover {
+      border: solid 4px #960000;
+      transition: .5s;
+    }
   }
 }
 
