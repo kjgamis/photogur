@@ -74,26 +74,32 @@ img {
 
 .index {
   background: #eee;
-  padding: 3.5em;
-  margin-top: 1em;
-  a {
-    color: #222;
-  }
-  h2 {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin: 1em 0 0 1.2em;
-  }
-  h3 {
-    font-size: 1em;
-    font-weight: 200;
-    margin: 0.2em 0 1em 1.4em;
+  padding: 2em 2em 5em 2em;
+  // position: relative;
+  .single {
+    a {
+      color: #222;
+    }
+    h2 {
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: 1em 0 0 1.2em;
+      // position: absolute;
+      // right: 1em;
+    }
+    h3 {
+      font-size: 1em;
+      font-weight: 200;
+      margin: 0.2em 0 1em 1.4em;
+      // position: absolute;
+      // right: 1em;
+    }
   }
 }
 
 .show {
   background: #eee;
-  padding: 2em;
+  padding: 2em 2em 5em 2em;
   position: relative
   img {
   width: 100%;
@@ -102,18 +108,18 @@ img {
     color: #222;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 400;
-    margin: 0;
+    margin: 0.4em 0 0 0 ;
     position: absolute;
-    right: 3em;
+    right: 1.75em;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 200;
-    margin: 1.5em 0 0 4em;
+    margin: 2em 0 0 4em;
     position: absolute;
-    right: 4em;
+    right: 2.0em;
   }
 }
 

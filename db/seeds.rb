@@ -8,21 +8,21 @@
 
 
 Picture.create(
-  title:  'The old church on the coast of White sea',
-  artist: 'Sergey Ershov',
-  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/house.jpg'
+  title:  'Times Square',
+  artist: 'Wojtek Witkowski',
+  url:    'https://picsum.photos/3000/1996?image=274'
 )
 
 Picture.create(
-  title:  'Sea Power',
-  artist: 'Stephen Scullion',
-  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/wave.jpg'
+  title:  'Paris',
+  artist: 'Louis Pellissier',
+  url:    'https://picsum.photos/3000/1996?image=318'
 )
 
 Picture.create(
-  title:  'Into the Poppies',
-  artist: 'John Wilhelm',
-  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg'
+  title:  'Skyline',
+  artist: 'Sarah Holmes',
+  url:    'https://picsum.photos/3000/1996?image=931'
 )
 
 Picture.create(
@@ -89,4 +89,40 @@ Picture.create(
   title: 'Brooklyn',
   artist: 'Vita Vilcina',
   url: 'https://picsum.photos/3000/1996?image=554'
+)
+
+Picture.create(
+  title:  'Desolate Highway',
+  artist: 'Kamil Lehmann',
+  url:    'https://picsum.photos/3000/1996?image=379'
+)
+
+Picture.create(
+  title:  'Mountain By The Lake',
+  artist: 'Nick West',
+  url:    'https://picsum.photos/3000/1996?image=381'
+)
+
+Picture.create(
+  title:  'Chateau',
+  artist: 'Vadim Sherbakov',
+  url:    'https://picsum.photos/3000/1996?image=193'
+)
+
+Picture.create(
+  title:  'Web Designer\'s Notebook',
+  artist: 'Galymzhan Adbugalimov',
+  url:    'https://picsum.photos/3000/1996?image=180'
+)
+
+Picture.create(
+  title:  'Greece',
+  artist: 'Margaret Barley',
+  url:    'https://picsum.photos/3000/1996?image=49'
+)
+
+Picture.create(
+  title:  'White Pebble Beach',
+  artist: 'Pau Jarvis',
+  url:    'https://picsum.photos/3000/1996?image=13'
 )
