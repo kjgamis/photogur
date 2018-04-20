@@ -1,22 +1,12 @@
-<div class="container">
 
-  <header class="header">
-    <h1 class="logo">Photogur</h1>
+<div class="index">
 
-    <span class="link"><%= link_to('New Picture', new_picture_path) %></span>
-  </header>
-
-  <section class="wrapper">
-    <% @pictures.each do |pic| %>
-      <%= render 'single_picture', picture: pic %>
-    <% end %>
-  </section>
+  <% @pictures.each do |pic| %>
+    <%= render 'single_picture', picture: pic %>
+  <% end %>
+</div>
 
   <!-- <% @most_recent_pictures.each do |pic| %>
     <p><%= pic.title %>, <%= pic.artist %></p>
     <%= link_to(image_tag(pic.url), "/pictures/#{pic.id}") %>
   <% end %> -->
-  <footer>
-    <h5>&copy Karen Gamis</h5>
-  </footer>
-</div>

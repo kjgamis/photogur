@@ -9,6 +9,13 @@ body {
   font-family: 'Exo', sans-serif;
   font-size: 50px;
   margin: 25px 10px;
+  grid-area: logo;
+}
+
+.navbar {
+  grid-area: navbar;
+  align-self: center;
+  justify-self: end;
 }
 
 .label {
@@ -27,6 +34,10 @@ a:hover {
 
 .header {
   grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "logo navbar"
 }
 
 .container {
@@ -49,14 +60,14 @@ footer {
 
 @media only screen and (min-width: 1024px)  {
 
-  .wrapper {
+  .index {
     background: #eee;
     padding: 1em;
     margin-top: 1em;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-gap: 0.25em;
-    grid-area: wrapper;
+    // grid-area: wrapper;
 
   }
 

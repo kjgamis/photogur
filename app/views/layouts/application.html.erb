@@ -9,8 +9,26 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
 
-<%= yield %>
+    <header class="header">
+      <h1 class="logo"><a href="/pictures">Photogur</a></h1>
 
+      <nav class="navbar">
+        | <%= link_to('Pictures', pictures_path) %> |
+        <%= link_to('New Picture', new_picture_path) %> |
+      </nav>
+    </header>
+
+    <section class="wrapper">
+
+    <%= yield %>
+
+    </section>
+
+    <footer>
+      <h5>&copy Karen Gamis</h5>
+    </footer>
+  </div>
 </body>
 </html>
