@@ -26,67 +26,67 @@ Picture.create(
 )
 
 Picture.create(
-  title: 'Continental'
-  artist: 'Tim Stief'
+  title: 'Continental',
+  artist: 'Tim Stief',
   url: 'https://picsum.photos/3000/1996?image=1071'
 )
 
 Picture.create(
-  title: 'City Sun'
-  artist: 'Kevin Young'
+  title: 'City Sun',
+  artist: 'Kevin Young',
   url: 'https://picsum.photos/3000/1996?image=1067'
 )
 
 Picture.create(
-  title: 'Montreal Memories'
-  artist: 'Clark Street Mercantile'
+  title: 'Montreal Memories',
+  artist: 'Clark Street Mercantile',
   url: 'https://picsum.photos/3000/1996?image=1059'
 )
 
 Picture.create(
-  title: 'Cliffs'
-  artist: 'Joseph Barrientos'
+  title: 'Cliffs',
+  artist: 'Joseph Barrientos',
   url: 'https://picsum.photos/3000/1996?image=1050'
 )
 
 Picture.create(
-  title: 'Zurich Airport'
-  artist: 'Erex Attias'
+  title: 'Zurich Airport',
+  artist: 'Erex Attias',
   url: 'https://picsum.photos/3000/1996?image=1033'
 )
 
 Picture.create(
-  title: 'Stack'
-  artist: 'Joanna Kosinska'
+  title: 'Stack',
+  artist: 'Joanna Kosinska',
   url: 'https://picsum.photos/3000/1996?image=998'
 )
 
 Picture.create(
-  title: 'Lighthouse'
-  artist: 'Joshua Hibbert'
+  title: 'Lighthouse',
+  artist: 'Joshua Hibbert',
   url: 'https://picsum.photos/3000/1996?image=870'
 )
 
 Picture.create(
-  title: 'Grand Central Station'
-  artist: 'Thomas Lefebvre'
+  title: 'Grand Central Station',
+  artist: 'Thomas Lefebvre',
   url: 'https://picsum.photos/3000/1996?image=800'
 )
 
 Picture.create(
-  title: 'Photo Equipment'
-  artist: 'C MA'
+  title: 'Photo Equipment',
+  artist: 'C MA',
   url: 'https://picsum.photos/3000/1996?image=435'
 )
 
 Picture.create(
-  title: 'Train'
-  artist: 'Matthew Wiebe'
+  title: 'Train',
+  artist: 'Matthew Wiebe',
   url: 'https://picsum.photos/3000/1996?image=694'
 )
 
 Picture.create(
-  title: 'Brooklyn'
-  artist: 'Vita Vilcina'
+  title: 'Brooklyn',
+  artist: 'Vita Vilcina',
   url: 'https://picsum.photos/3000/1996?image=554'
 )
