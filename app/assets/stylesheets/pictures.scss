@@ -5,39 +5,47 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-.logo {
-  font-family: 'Exo', sans-serif;
-  font-size: 50px;
-  margin: 25px 10px;
-  grid-area: logo;
+a {
+  text-decoration: none;
 }
+
 
 .navbar {
   grid-area: navbar;
   align-self: center;
   justify-self: end;
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: #ccc;
+    transition: .5s;
+  }
 }
 
 .label {
   font-family: 'Quicksand', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  color: #ccc;
-  transition: .5s;
-}
 
 .header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "logo navbar"
+      "logo navbar";
+  grid-template-columns: 1fr 1fr;
+  a {
+    color: #000;
+  }
+  .logo {
+    font-family: 'Exo', sans-serif;
+    font-size: 75px;
+    margin: 25px 10px;
+    grid-area: logo;
+  }
+  .navbar {
+    margin: 0 1em;
+  }
 }
 
 .container {
@@ -48,6 +56,12 @@ a:hover {
     "header"
     "wrapper"
     "footer"
+}
+
+.index {
+  background: #eee;
+  padding: 3.5em;
+  margin-top: 1em;
 }
 
 img {
@@ -61,14 +75,9 @@ footer {
 @media only screen and (min-width: 1024px)  {
 
   .index {
-    background: #eee;
-    padding: 1em;
-    margin-top: 1em;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-gap: 0.25em;
-    // grid-area: wrapper;
-
   }
 
   .wrapper > .single:nth-child(odd) {
