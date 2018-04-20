@@ -1,17 +1,12 @@
 <%= form_for(picture) do |f| %>
-  <p>
-    <%= f.label :artist %><br>
-    <%= f.text_field :artist %>
-  </p>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
-  </p>
-  <p>
-    <%= f.submit "Save" %>
-  </p>
+  <h4><%= f.label :artist %><br>
+  <h4><%= f.text_field :artist %>
+
+  <h4><%= f.label :title %><br>
+  <h4><%= f.text_field :title %>
+
+  <h4><%= f.label :url %><br>
+  <h4><%= f.text_field :url %>
+
+  <h4><%= f.submit "Save" %></h4>
 <% end %>

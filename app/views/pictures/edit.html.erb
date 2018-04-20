@@ -1,6 +1,5 @@
-<h1 class="label">Edit Picture</h1>
+<div class="form">
+  <h1 class="label">Edit Picture</h1>
 
-<span class="link"><%= link_to("Back", "/pictures/#{@picture.id}") %>
-</span>
-
-<%= render 'picture_form', picture: @picture %>
+  <%= render 'picture_form', picture: @picture %>
+</div>

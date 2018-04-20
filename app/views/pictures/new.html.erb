@@ -1,17 +1,17 @@
-<h1 class="label">Add a Picture</h1>
+<div class="form">
+  <h1 class="label">New Picture</h1>
 
-<span class="link"><%= link_to('Back to Pictures', pictures_path) %></span>
+  <%= render 'picture_form', picture: @picture %>
 
-<%= render 'picture_form', picture: @picture %>
+  <% if @picture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this article from being saved:</h2>
 
-<% if @picture.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this article from being saved:</h2>
-
-    <ul>
-      <% @picture.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+      <ul>
+        <% @picture.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
