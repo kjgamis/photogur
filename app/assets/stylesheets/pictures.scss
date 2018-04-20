@@ -3,12 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   font-family: Helvetica, sans-serif;
+  // overflow: hidden
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
 
 .navbar {
   grid-area: navbar;
@@ -58,14 +62,38 @@ a {
     "footer"
 }
 
+// wrapper sections
+
 .index {
   background: #eee;
   padding: 3.5em;
   margin-top: 1em;
 }
 
-img {
+.show {
+  background: #eee;
+  padding: 2em;
+  position: relative
+  img {
   width: 100%;
+  }
+  a {
+    color: #222;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    right: 3em;
+  }
+  h3 {
+    font-size: 1em;
+    font-weight: 200;
+    margin: 1.5em 0 0 4em;
+    position: absolute;
+    right: 4em;
+  }
 }
 
 footer {
@@ -80,11 +108,11 @@ footer {
     grid-gap: 0.25em;
   }
 
-  .wrapper > .single:nth-child(odd) {
+  .wrapper .single:nth-child(odd) {
     background: #ccc;
   }
 
-  .single {
+  .show {
     border: solid black .05em;
   }
 }
