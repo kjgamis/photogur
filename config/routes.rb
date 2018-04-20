@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   resources :pictures
 
-  resource :user, only: [:new, :create]
+  resource :users, only: [:new, :create]
 
 end
