@@ -28,6 +28,7 @@ img {
   grid-template-areas:
       "logo navbar";
   grid-template-columns: 1fr 1fr;
+  position: relative;
   a {
     color: #000;
   }
@@ -56,6 +57,12 @@ img {
     a:hover {
       border: solid 4px #960000;
       transition: .5s;
+    }
+    h5 {
+      font-weight: 200;
+      position: absolute;
+      bottom: 0;
+      right: 2em;
     }
   }
 }
