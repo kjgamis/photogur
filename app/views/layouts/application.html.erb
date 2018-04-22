@@ -15,8 +15,16 @@
       <h1 class="logo"><a href="<%= new_users_path %>">Photogur</a></h1>
 
       <nav class="navbar">
-        <%= link_to('Pictures', pictures_path) %>
-        <%= link_to('New Picture', new_picture_path) %>
+        <% if current_user %>
+          <%= link_to('Pictures', pictures_path) %>
+          <%= link_to('New Picture', new_picture_path) %>
+          <%= link_to('Logout', sessions_path('current'), method: :delete) %>
+          <br/>
+          <h5>Signed in as <%= current_user.email %></h5>
+        <% else %>
+          <%= link_to('Login', new_sessions_path) %>
+          <%= link_to('Sign up', new_users_path) %>
+        <% end %>
       </nav>
     </header>
 
