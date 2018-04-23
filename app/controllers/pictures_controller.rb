@@ -1,4 +1,6 @@
 class PicturesController < ApplicationController
+  before_action :ensure_login
+
   def index
     @pictures = Picture.all
     @most_recent_pictures = Picture.most_recent_five
@@ -55,4 +57,10 @@ class PicturesController < ApplicationController
     redirect_to "/pictures/"
   end
 
+
+  private
+
+  def ensure_login
+    redirect_to root_path if !current_user
+  end
 end
