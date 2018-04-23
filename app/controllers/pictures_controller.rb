@@ -63,4 +63,8 @@ class PicturesController < ApplicationController
   def ensure_login
     redirect_to root_path if !current_user
   end
+
+  def ensure_ownership
+    redirect_to root_path unless current_user.id != @picture.user_id
+  end
 end
