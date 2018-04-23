@@ -2,4 +2,5 @@
   <%= link_to(image_tag(picture.url), picture_path(picture)) %>
   <h2><%= picture.title %></h2>
   <h3><%= picture.artist %></h3>
+  <h4><%= picture.comments.count %> Comments </h4>
 </div>

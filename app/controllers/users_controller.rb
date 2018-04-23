@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     @user.password_confirmation = params[:user][:password_confirmation]
 
     if @user.save
-      redirect to pictures_url
+      redirect_to pictures_url
     else
       render :new
     end

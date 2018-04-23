@@ -126,3 +126,21 @@ Picture.create(
   artist: 'Pau Jarvis',
   url:    'https://picsum.photos/3000/1996?image=13'
 )
+
+Comment.create(
+  name: 'KJG',
+  message: 'fave',
+  picture_id: 1
+)
+
+Comment.create(
+  name: 'KJG',
+  message: 'pretty!',
+  picture_id: 2
+)
+
+Comment.create(
+  name: 'friend',
+  message: 'city vibes',
+  picture_id: 3
+)

@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   # root 'pictures#index'
   root 'home#index'
 
-  resources :pictures
+  resources :pictures do
+    resources :comments, only: [:create, :edit, :update, :destroy]
+  end
 
   resource :users, only: [:new, :create]
 
