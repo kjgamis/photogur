@@ -1,0 +1,28 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.new-session {
+  text-align: center;
+  input {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  // input:nth-last-child(1) {
+    // background: #333;
+  // }
+  h4 {
+    font-size: 0.75em;
+    margin: 0;
+  }
+  h4:nth-child(even) {
+    margin: 0 0 0.5em 0;
+  }
+  h4:nth-last-child(1) {
+    input {
+      background: #888;
+      color: #eee;
+      margin: 1em;
+    }
+  }
+}

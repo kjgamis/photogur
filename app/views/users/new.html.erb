@@ -1,5 +1,5 @@
-<div class="new_account">
-  <h1>Create New Account</h1>
+<section class="new-user">
+  <h1 class="label">New Account</h1>
 
   <% if @user.errors.any? %>
     <% @user.errors.full_messages.each do |error| %>
@@ -17,7 +17,7 @@
     <h4><%= f.label :password_confirmation %></h4>
     <h4><%= f.password_field :password_confirmation %></h4>
 
-    <h4><<%= f.submit 'Sign Up' %></h4>
+    <h4><%= f.submit 'Sign Up' %></h4>
   <% end %>
 
-</div>
+</section>
