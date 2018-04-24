@@ -10,19 +10,22 @@
 Picture.create(
   title:  'Times Square',
   artist: 'Wojtek Witkowski',
-  url:    'https://picsum.photos/3000/1996?image=274'
+  url:    'https://picsum.photos/3000/1996?image=274',
+  user_id: 1
 )
 
 Picture.create(
   title:  'Paris',
   artist: 'Louis Pellissier',
-  url:    'https://picsum.photos/3000/1996?image=318'
+  url:    'https://picsum.photos/3000/1996?image=318',
+  user_id: 1
 )
 
 Picture.create(
   title:  'Skyline',
   artist: 'Sarah Holmes',
-  url:    'https://picsum.photos/3000/1996?image=931'
+  url:    'https://picsum.photos/3000/1996?image=931',
+  user_id: 1
 )
 
 Picture.create(
