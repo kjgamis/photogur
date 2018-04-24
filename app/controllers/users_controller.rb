@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  has_many :comments
 
   def new
     @user = User.new

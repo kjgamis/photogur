@@ -1,4 +1,7 @@
 class PicturesController < ApplicationController
+  belongs_to :user
+  has_many :comments
+
   before_action :ensure_logged_in, except: [:index]
   before_action :load_picture, only: [:show, :edit, :update, :destroy]
   before_action :ensure_ownership, except: [:index]
