@@ -144,3 +144,10 @@ Comment.create(
   message: 'city vibes',
   picture_id: 3
 )
+
+
+User.create(
+  email: 'kjgamis@live.ca',
+  password: '1234',
+  password_confirmation: '1234'
+)

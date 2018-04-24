@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to pictures_url, notice: "Logged in!"
     else
+      flash.now[:alert] = ['Login failed, name and/or password incorrect.']
       render :new
     end
   end

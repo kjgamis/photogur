@@ -2,6 +2,7 @@
   <h1 class="label">Login</h1>
 
   <%= form_for :session, url: sessions_path do |f| %>
+                    <!-- sessions_path directs to sessions#create -->
 
     <h4><%= f.label :email %></h4>
     <h4><%= f.email_field :email %></h4>

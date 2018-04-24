@@ -13,6 +13,8 @@ class UsersController < ApplicationController
     @user.password_confirmation = params[:user][:password_confirmation]
 
     if @user.save
+      # logs in user after making account
+      session[:user_id] = @user.id
       redirect_to pictures_url
     else
       render :new

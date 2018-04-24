@@ -24,8 +24,9 @@ ActiveRecord::Schema.define(version: 20180420181000) do
     t.string   "artist"
     t.string   "title"
     t.string   "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "role",       default: "owner"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "users", force: :cascade do |t|

@@ -18,7 +18,8 @@
       <nav class="navbar">
           <%= link_to('Pictures', pictures_path) %>
           <%= link_to('New Picture', new_picture_path) %>
-          <%= link_to('Logout', sessions_path('current'), method: :delete) if current_user %>
+          <%= link_to('Logout', sessions_path, method: :delete) if current_user %>
+                      <!-- sessions_path directs to sessions#destroy -->
           <br/>
           <% if current_user %>
             <h5>Signed in as <%= current_user.email %></h5>
