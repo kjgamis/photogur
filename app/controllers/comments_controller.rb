@@ -1,6 +1,4 @@
 class CommentsController < ApplicationController
-  belongs_to :pictures
-
   def create
     @comment = Comment.new
 

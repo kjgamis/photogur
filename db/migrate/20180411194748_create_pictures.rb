@@ -5,6 +5,7 @@ class CreatePictures < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :url
       t.string :role, default: 'owner'
+      t.integer :user_id
 
       t.timestamps
     end

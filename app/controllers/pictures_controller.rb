@@ -1,10 +1,7 @@
 class PicturesController < ApplicationController
-  belongs_to :user
-  has_many :comments
-
   before_action :ensure_logged_in, except: [:index]
   before_action :load_picture, only: [:show, :edit, :update, :destroy]
-  before_action :ensure_ownership, except: [:index]
+  before_action :ensure_ownership, only: [:edit, :update, :destroy]
 
   def index
     @pictures = Picture.all
@@ -21,16 +18,18 @@ class PicturesController < ApplicationController
   end
 
   def create
-    # render text: "Received POST request to '/pictures' with the data URL: #{params}"
     @picture = Picture.new
 
     @picture.title = params[:picture][:title]
     @picture.artist = params[:picture][:artist]
     @picture.url = params[:picture][:url]
 
+    # assigns the picture to the user that is logged in
+    @picture.user_id = current_user.id
+
     if @picture.save
       # if the picture gets saved, generate a get request to "/pictures" (the index)
-      redirect_to "/pictures"
+      redirect_to pictures_url
     else
       # otherwise render new.html.erb
       render :new
@@ -59,7 +58,7 @@ class PicturesController < ApplicationController
   def destroy
     # @picture = Picture.find(params[:id])
     @picture.destroy
-    redirect_to "/pictures/"
+    redirect_to pictures_url
   end
 
 

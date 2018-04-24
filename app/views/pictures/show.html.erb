@@ -4,11 +4,13 @@
 <section class="show">
   <%= render 'single_picture', picture: @picture %>
 
-  <div class="links">
-    <%= link_to('Edit Picture', edit_picture_path) if current_user == @picture.user %> |
+  <% if current_user == @picture.user %>
+    <div class="links">
+      <%= link_to('Edit Picture', edit_picture_path) %> |
 
-    <%= link_to('Delete', picture_path(@picture), method: :delete, data: {confirm: "Are you sure you want to delete this picture?"})  %>
-  </div>
+      <%= link_to('Delete', picture_path(@picture), method: :delete, data: {confirm: "Are you sure you want to delete this picture?"})  %>
+    </div>
+  <% end %>
 
   <div class="comments">
     <h1 class="label">Comments:</h1>
