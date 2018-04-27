@@ -61,18 +61,4 @@ class PicturesController < ApplicationController
     redirect_to pictures_url
   end
 
-
-  private
-
-  def load_picture
-    @picture = Picture.find(params[:id])
-  end
-
-  def ensure_logged_in
-    redirect_to root_path if !current_user
-  end
-
-  def ensure_ownership
-    redirect_to root_path if current_user != @picture.user
-  end
 end

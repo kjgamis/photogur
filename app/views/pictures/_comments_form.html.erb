@@ -1,0 +1,7 @@
+<%= form_for picture_comments_path(picture) do |f| %>
+  <h4><%= f.label :name %><br>
+  <h4><%= f.text_field :name %>
+
+  <h4><%= f.label :message %><br>
+  <h4><%= f.text_field :message %>
+<% end %>
